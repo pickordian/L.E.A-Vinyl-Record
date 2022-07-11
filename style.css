@@ -1,0 +1,86 @@
+.header{
+    background-color: #282828;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 74px;
+    line-height: 111px;
+    align-items: center;
+    text-align: center;
+    color:darkseagreen;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-top:0px;
+}
+.function{
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 20px;
+}
+input{
+    width: 500px;
+    height: 30px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    text-align: left;
+    margin:10px;
+    font-size: medium;
+}
+label{
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 24px;
+    text-align: left;
+    margin:10px;
+}
+input[type=submit]{
+    width: 70px;
+    height: 35px;
+    background-color: #6E78FF;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-color: #6E78FF;
+}
+input[type=submit]:hover{
+    width: 70px;
+    height: 40px;
+    background-color: #232fdd;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-color: #6E78FF;
+}
+.form{
+    padding: 10px;
+    position: relative;
+    background-color: rgb(255, 255, 252);
+    text-align: center;
+}
+a.button:link, a.button:visited{
+    display: inline-block;
+    background-color: #433b3b;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    width: 70px;
+    text-decoration-line: none;
+}
+a.button:hover, a.button:active{
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
