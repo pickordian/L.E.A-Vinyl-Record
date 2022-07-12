@@ -194,6 +194,13 @@ form a{
   font-weight: lighter;
   font-family: 'Inter', sans-serif;
 }
+
+label{
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+  font-family: 'Inter', san-serif;
+}
 #Indicator{
   width: 90px;
   margin-left: 10px;
@@ -203,5 +210,5 @@ form a{
   margin-top: 8px;
   transform: translateX(100px);
   transition: transform 1s;
-
 }
+
