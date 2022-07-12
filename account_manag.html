@@ -42,20 +42,22 @@
 <div class="form-container">
 <form >
 <label for="fname">First name</label> 
-<input type="text" placeholder="Jane" disabled>
+<input type="text" id ="fname" name="fname"value="Jane" disabled>
 <label for="lnam">Last name</label>
-<input type="text" placeholder="Doe" disabled>
+<input type="text" id="lname" name="lname" value="Doe" disabled>
 <label for="email">Email</label>
-<input type ="text" placeholder= "JaneDoe@gmail.com" disabled>
+<input type ="text" id="email" name="email" value= "JaneDoe@gmail.com" disabled>
 <label for="pw">Password</label>
-<input type="text" placeholder="JaneDoe123" disabled>
-<span style="color:black" onclick="Edit()">Edit</span>
+<input  disabled type="password" id="pw" name="pw" value="JaneDoe123">
+<button class= "button" onclick="Edit()">Edit</button>
 <button type="submit" class ="button"> Save</button>
 </form>
 </div>
 <script>
-function Edit()
-{
-    document.getElementsByTagName("input").disabled = false;
+    var edit = document.getElementsByTagName("input");
+function Edit(){
+    document.getElementsByTagName('input').disabled = false;
 }
 </script>
+</body>
+</html>
