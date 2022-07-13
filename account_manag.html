@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,55 +10,64 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
- </style>
- 
+</style>
+
 <body>
-     <!--header for website--->
+    <!--header for website--->
     <header class="header">
-<div class="navbar">
-    <div class="logo">
-        <img src="Retro text 4.png"width="600px">
-    </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Retro text 4.png" width="600px">
+            </div>
 
-   <!--search bar-->
-       <div class="box">
-        <input type="text" placeholder="Search by Artist, Album, or Keyword">
-        <i class="fa-solid fa-magnifying-glass"></i>
+            <!--search bar-->
+            <div class="box">
+                <input type="text" placeholder="Search by Artist, Album, or Keyword">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!--header options for website-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Shop by Artist</a></li>
+                    <li><a href="">Shop by Category</a></li>
+                    <li><a href="">Records of the Month</a></li>
+                    <li><a href="account.html">Account</a></li>
+
+                </ul>
+            </nav>
         </div>
+        <!--end of website header-->
+    </header>
+    <div class="form-container">
+        <form>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" value="Jane" disabled>
+            <label for="lnam">Last name</label>
+            <input type="text" id="lname" name="lname" value="Doe" disabled>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" value="JaneDoe@gmail.com" disabled>
+            <label for="pw">Password</label>
+            <input type="password" id="pw" name="pw" value="JaneDoe123" disabled>
+            <button type="submit" class="button"> Save</button>
+            <button class="button" type="button" onclick="Edit_user_info()">Edit</button>
+        </form>
+           
+    </div>
+    <script>
+        const edit_fname = document.getElementById("fname");
+        const edit_lname = document.getElementById("lname");
+        const edit_email = document.getElementById("email");
+        const edit_pw = document.getElementById("pw");
 
-<!--header options for website-->
-    <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">Shop by Artist</a></li>
-        <li><a href="">Shop by Category</a></li>
-        <li><a href="">Records of the Month</a></li>
-        <li><a href="account.html">Account</a></li>
-
-    </ul>
-</nav>
-</div>
-<!--end of website header-->
-</header>
-<div class="form-container">
-<form >
-<label for="fname">First name</label> 
-<input type="text" id ="fname" name="fname"value="Jane" disabled>
-<label for="lnam">Last name</label>
-<input type="text" id="lname" name="lname" value="Doe" disabled>
-<label for="email">Email</label>
-<input type ="text" id="email" name="email" value= "JaneDoe@gmail.com" disabled>
-<label for="pw">Password</label>
-<input  disabled type="password" id="pw" name="pw" value="JaneDoe123">
-<button class= "button" onclick="Edit()">Edit</button>
-<button type="submit" class ="button"> Save</button>
-</form>
-</div>
-<script>
-    var edit = document.getElementsByTagName("input");
-function Edit(){
-    document.getElementsByTagName('input').disabled = false;
-}
-</script>
+        function Edit_user_info() {
+            edit_fname.disabled = false;
+            edit_lname.disabled = false;
+            edit_email.disabled = false;
+            edit_pw.disabled = false;
+        }
+    </script>
 </body>
+
 </html>
