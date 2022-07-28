@@ -25,20 +25,18 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getFirestore();
  // registration 
-{
-    const user_db = collection(db, 'user_info');
-    const RegForm = document.querySelector('#RegForm');
-    RegForm.addEventListener('submit', (e) => {
-        e.prevenDefault()
+const user_db = collection(db, 'user_info');
+const RegForm = document.querySelector('#RegForm');
+RegForm.addEventListener('submit', (e) => {
+    e.prevenDefault()
+});
+addDoc(user_db, {
+email: RegForm.email.value,
+    first_name: RegForm.first_name.value,
+    last_name: RegForm.last_name.value,
+    password: RegForm.password.value,
+})
+    .then(() => {
+        RegForm.reset();
+        console.log("Reg complete.");
     });
-    addDoc(user_db, {
-        email: RegForm.email.value,
-        first_name: RegForm.first_name.value,
-        last_name: RegForm.last_name.value,
-        password: RegForm.password.value,
-    })
-        .then(() => {
-            RegForm.reset();
-            console.log("Reg complete.");
-    });
-}
