@@ -1,21 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
     <title>Lea's Records</title>
-
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/style.css">
     <script src="https://kit.fontawesome.com/e24ff3a311.js" crossorigin="anonymous"></script>
  
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
 <style>
 h1{
     font-family: 'Abril Fatface', cursive;
@@ -33,18 +29,11 @@ p{
 
 <body>
     <header>
+         
             <input type="checkbox" name="" id="chk1">
-
-
-            <div class="logo"><h1>L.E.A.'S Reocrds</h1> </div>
-
-
-<!---
-<div class="logoPic">
-    <a href="index.html"><img src="images/Retro text 4.png"width="300px" height="auto"></a>
-</div>
---->
-
+            <div class="logo"> 
+                <h1>L.E.A.'S Reocrds</h1>
+            </div>
             <div class="search-box">
                 <form action="">
                     <input type="text" name="search" id="srch" placeholder="Search by Artist, Album, or Keyword">
@@ -54,7 +43,7 @@ p{
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="artist.html">Shop by Artist</a></li>
-                <li><a href="">Shop by Category</a></li>
+                <li><a href="categories.html">Shop by Category</a></li>
                 
                 <li>
                     <a href="wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -70,18 +59,73 @@ p{
             </div>
     </header>
 
+    <!---Website Body-->
 
-<!--website body-->
+<div class="wishlistPg">
+<h1>New Releases</h1>
+<h2>Looking for a new record? Shop the newest drops</h2>
+</div>
 
-    <h1>Records of the Month</h1>
-  
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3RQQmkQEvNCY4prGKE6oc5?utm_source=generator" width="30%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<div class="wishlistLine"></div>
 
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7nXJ5k4XgRj5OLg9m8V3zc?utm_source=generator" width="30%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<div class="filter-condition">
+    <span>Sort By</span>
+    <br>
+    <select name="" id="select">
+        <option value="Default">Default</option>
+        <option value="LowToHigh">Low to high</option>
+        <option value="HighToLow">High to low</option>
+    </select>
+</div>
 
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5r36AJ6VOJtp00oxSkBZ5h?utm_source=generator" width="30%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+<!--product 1-->
+<div class="shop-content">
+<div class="product-box">
+    <a href="DawnFM.html"><img src="images/Dawn FM.jpeg" alt="" class="product-img" width="200" height="200"></a>
+    <h3 class="product-title">Dawn FM</h3>
+    <h4 class="product-artist">The Weeknd</h4>
+    <span class="price">$32.99</span>
+    <br>
+    <a href="wishlist.html"><i class="fa fa-heart" style="color:black"></i></a>
+    <button>Add to bag</button>
+</div>
+<!--product 2-->
+<div class="product-box">
+    <a href="UVST.html"><img src="images/un verano sin ti.jpg" class="product-img" width="200" height="200"></a>
+    <h3 class="product-title">Un Verano Sin Ti</h3>
+    <h4 class="product-artist">Bad Bunny</h4>
+    <span class="price">$29.99</span>
+    <br>
+    <a href="wishlist.html"><i class="fa fa-heart" style="color:black"></i></a>
+    <button>Add to bag</button>
+</div>
+<!--product 3-->
+<div class="product-box">
+    <a href="HarrysHouse.html"><img src="images/HarrysHouse.jpg" class="product-img" width="200" height="200"></a>
+    <h3 class="product-title">Harry's House</h3>
+    <h4 class="product-artist">Harry Styles</h4>
+    <span class="price">$32.99</span>
+    <br>
+    <a href="wishlist.html"><i class="fa fa-heart" style="color:black;"></i></a>
+    <button>Add to bag</button>
+    
+</div>
+<!--product 4-->
+<div class="product-box">
+    <a href="Ivory.html"><img src="images/Ivory.jpeg" class="product-img" width="200" height="200"></a>
+    <h3 class="product-title">Ivory</h3>
+    <h4 class="product-artist">Omar Apollo</h4>
+    <span class="price">$22.99</span>
+    <br>
+    <a href="wishlist.html"><i class="fa fa-heart" style="color:black"></i></a>
+    <button>Add to bag</button>
+    
+</div>
 
 
-    <script src="app/js/script.js"></script>
+
+</div>
+
 </body>
 </html>
