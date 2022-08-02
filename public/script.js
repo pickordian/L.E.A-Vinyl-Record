@@ -25,7 +25,7 @@ const db = getFirestore(app);
 const user_db = collection(db, 'user_info');
 const RegForm = document.querySelector('#RegForm');
 RegForm.addEventListener('submit', (e) => {
-    e.prevenDefault()
+    e.prevenDefault();
 });
 addDoc(user_db, {
 email: RegForm.email.value,
