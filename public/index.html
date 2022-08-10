@@ -1,132 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lea's Records</title>
-    <link rel="stylesheet" href="dist/style.css">
-    <script src="https://kit.fontawesome.com/e24ff3a311.js" crossorigin="anonymous"></script>
- 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e24ff3a311.js"
+      crossorigin="anonymous"
+    ></script>
 
-<style>
-h1{
-    font-family: 'Abril Fatface', cursive;
-}
-p{
-    font-family: 'Inter';
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
+    <style>
+      h1 {
+        font-family: "Abril Fatface", cursive;
+      }
+      p {
+        font-family: "Inter";
+      }
+    </style>
+  </head>
 
-</style>
-
-</head>
-
-
-
-<body>
+  <body>
     <header>
-         
-            <input type="checkbox" name="" id="chk1">
-            <div class="logo"> 
-                <h1>L.E.A.'S Reocrds</h1>
-            </div>
-            <div class="search-box">
-                <form action="">
-                    <input type="text" name="search" id="srch" placeholder="Search by Artist, Album, or Keyword">
-                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="artist.html">Shop by Artist</a></li>
-                <li><a href="categories.html">Shop by Category</a></li>
-                
-                <li>
-                    <a href="wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                    <a href="bag.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                    <a href="account.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-            <div class="menu">
-                <label for="chk1">
-                    <i class="fa fa-bars"></i>
+      <input type="checkbox" name="" id="chk1" />
+      <div class="logo">
+        <h1>L.E.A.'S Reocrds</h1>
+      </div>
+      <div class="search-box">
+        <form action="">
+          <input
+            type="text"
+            name="search"
+            id="srch"
+            placeholder="Search by Artist, Album, or Keyword"
+          />
+          <button type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artist.html">Shop by Artist</a></li>
+        <li><a href="categories.html">Shop by Category</a></li>
 
-                </label>
-            </div>
+        <li>
+          <a href="wishlist.html"
+            ><i class="fa fa-heart" aria-hidden="true"></i
+          ></a>
+        <li class="bag"> 
+          <a href="bag.html"
+            ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+            ><icon-icon name="basket"></icon-icon><span>0</span></a
+          >
+        </li>
+          <a href="account.html"
+            ><i class="fa fa-user" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="menu">
+        <label for="chk1">
+          <i class="fa fa-bars"></i>
+        </label>
+      </div>
     </header>
 
     <!---Website Body-->
 
-<div class="wishlistPg">
-<h1>New Releases</h1>
-<h2>Looking for a new record? Shop the newest drops</h2>
-</div>
+    <div class="wishlistPg">
+      <h1>New Releases</h1>
+      <h2>Looking for a new record? Shop the newest drops</h2>
+    </div>
 
-<div class="wishlistLine"></div>
+    <div class="wishlistLine"></div>
 
-<div class="filter-condition">
-    <span>Sort By</span>
-    <br>
-    <select name="" id="select">
+    <div class="filter-condition">
+      <span>Sort By</span>
+      <br />
+      <select name="" id="select">
         <option value="Default">Default</option>
         <option value="LowToHigh">Low to high</option>
         <option value="HighToLow">High to low</option>
-    </select>
-</div>
+      </select>
+    </div>
+
+    <div class="container">
+      <div class="image">
+        <a href="DawnFM.html"
+          ><img
+            src="images/Dawn FM.jpeg"
+            alt=""
+            class="product-img"
+            width="200"
+            height="200"
+        /></a>
+        <h3>Dawn FM</h3>
+        <h3>The Weeknd</h3>
+        <h3>$32.99</h3>
+        <a class="add-bag bag1" href="#">Add Cart</a>
+      </div>
+      <div class="image">
+        <a href="UVST.html"
+          ><img
+            src="images/UVST.jpeg"
+            alt=""
+            class="product-img"
+            width="200"
+            height="200"
+        /></a>
+        <h3>Un Verano Sin Ti</h3>
+        <h3>Bad Bunny</h3>
+        <h3>$29.99</h3>
+        <a class="add-bag bag2" href="#">Add Cart</a>
+      </div>
+      <div class="image">
+        <a href="HarrysHouse.html"
+          ><img
+            src="images/HarrysHouse.jpeg"
+            alt=""
+            class="product-img"
+            width="200"
+            height="200"
+        /></a>
+        <h3>Harry's House</h3>
+        <h3>Harry Styles</h3>
+        <h3>$32.99</h3>
+        <a class="add-bag bag3" href="#">Add Cart</a>
+      </div>
+      <div class="image">
+        <a href="Ivory.html"
+          ><img
+            src="images/Ivory.jpeg"
+            alt=""
+            class="product-img"
+            width="200"
+            height="200"
+        /></a>
+        <h3>Ivory</h3>
+        <h3>Omar Apollo</h3>
+        <h3>$22.99</h3>
+        <a class="add-bag bag4" href="#">Add Cart</a>
+      </div>
+    </div>
 
 
-<!--product 1-->
-<div class="shop-content">
-<div class="product-box">
-    <a href="DawnFM.html"><img src="images/Dawn FM.jpeg" alt="" class="product-img" width="200" height="200"></a>
-    <h3 class="product-title">Dawn FM</h3>
-    <h4 class="product-artist">The Weeknd</h4>
-    <span class="price">$32.99</span>
-    <br>
-    <a href="wishlist.html"><i class="fa fa-heart" style="color:black"></i></a>
-    <button>Add to bag</button>
-</div>
-<!--product 2-->
-<div class="product-box">
-    <a href="UVST.html"><img src="images/UVST.jpeg" class="product-img" width="200" height="200"></a>
-    <h3 class="product-title">Un Verano Sin Ti</h3>
-    <h4 class="product-artist">Bad Bunny</h4>
-    <span class="price">$29.99</span>
-    <br>
-    <a href="wishlist.html"><i class="fa fa-heart" style="color:black"></i></a>
-    <button>Add to bag</button>
-</div>
-<!--product 3-->
-<div class="product-box">
-    <a href="HarrysHouse.html"><img src="images/HarrysHouse.jpg" class="product-img" width="200" height="200"></a>
-    <h3 class="product-title">Harry's House</h3>
-    <h4 class="product-artist">Harry Styles</h4>
-    <span class="price">$32.99</span>
-    <br>
-    <a href="wishlist.html"><i class="fa fa-heart" style="color:black;"></i></a>
-    <button>Add to bag</button>
-    
-</div>
-<!--product 4-->
-<div class="product-box">
-    <a href="Ivory.html"><img src="images/Ivory.jpeg" class="product-img" width="200" height="200"></a>
-    <h3 class="product-title">Ivory</h3>
-    <h4 class="product-artist">Omar Apollo</h4>
-    <span class="price">$22.99</span>
-    <br>
-    <a href="wishlist.html"><i class="fa fa-heart" style="color:black"></i></a>
-    <button>Add to bag</button>
-    
-</div>
+  <div class="future-releases">
+    <h1>Future Releases</h1>
+    <h2>Check out our future releases!</h2>
+  </div>
+  
+  <div class="futureLine"></div>
+  
+  <div class="new_container">
+    <div class="image">
+      <a href="DawnFM.html"
+        ><img
+          src="images/Dawn FM.jpeg"
+          alt=""
+          class="product-img"
+          width="200"
+          height="200"
+      /></a>
+      <h3>Dawn FM</h3>
+      <h3>The Weeknd</h3>
+      <h3>$32.99</h3>
+      <a class="add-bag bag1" href="#">Add Cart</a>
+    </div>
+    <div class="image">
+      <a href="UVST.html"
+        ><img
+          src="images/UVST.jpeg"
+          alt=""
+          class="product-img"
+          width="200"
+          height="200"
+      /></a>
+      <h3>Un Verano Sin Ti</h3>
+      <h3>Bad Bunny</h3>
+      <h3>$29.99</h3>
+      <a class="add-bag bag2" href="#">Add Cart</a>
+    </div>
+    <div class="image">
+      <a href="HarrysHouse.html"
+        ><img
+          src="images/HarrysHouse.jpeg"
+          alt=""
+          class="product-img"
+          width="200"
+          height="200"
+      /></a>
+      <h3>Harry's House</h3>
+      <h3>Harry Styles</h3>
+      <h3>$32.99</h3>
+      <a class="add-bag bag3" href="#">Add Cart</a>
+    </div>
+    <div class="image">
+      <a href="Ivory.html"
+        ><img
+          src="images/Ivory.jpeg"
+          alt=""
+          class="product-img"
+          width="200"
+          height="200"
+      /></a>
+      <h3>Ivory</h3>
+      <h3>Omar Apollo</h3>
+      <h3>$22.99</h3>
+      <a class="add-bag bag4" href="#">Add Cart</a>
+    </div>
+  </div>
 
 
+  <div class="bestsellers">
+    <h1>Best Sellers</h1>
+    <h2>Lastly don't forget to check out our best sellers</h2>
+  </div>
+  
+  <div class="bestLine"></div>
+  
+  <div class="third_container">
+    <div class="image">
+      <a href="DawnFM.html"
+        ><img
+          src="images/Dawn FM.jpeg"
+          alt=""
+          class="product-img"
+          width="200"
+          height="200"
+      /></a>
+      <h3>Dawn FM</h3>
+      <h3>The Weeknd</h3>
+      <h3>$32.99</h3>
+      <a class="add-bag bag1" href="#">Add Cart</a>
+    </div>
+    <div class="image">
+      <a href="UVST.html"
+        ><img
+          src="images/UVST.jpeg"
+          alt=""
+          class="product-img"
+          width="200"
+          height="200"
+      /></a>
+      <h3>Un Verano Sin Ti</h3>
+      <h3>Bad Bunny</h3>
+      <h3>$29.99</h3>
+      <a class="add-bag bag2" href="#">Add Cart</a>
+    </div>
+    <div class="image">
+      <a href="HarrysHouse.html"
+        ><img
+          src="images/HarrysHouse.jpeg"
+          alt=""
+          class="product-img"
+          width="200"
+          height="200"
+      /></a>
+      <h3>Harry's House</h3>
+      <h3>Harry Styles</h3>
+      <h3>$32.99</h3>
+      <a class="add-bag bag3" href="#">Add Cart</a>
+    </div>
+    <div class="image">
+      <a href="Ivory.html"
+        ><img
+          src="images/Ivory.jpeg"
+          alt=""
+          class="product-img"
+          width="200"
+          height="200"
+      /></a>
+      <h3>Ivory</h3>
+      <h3>Omar Apollo</h3>
+      <h3>$22.99</h3>
+      <a class="add-bag bag4" href="#">Add Cart</a>
+    </div>
+  </div>
 
-</div>
 
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
-
