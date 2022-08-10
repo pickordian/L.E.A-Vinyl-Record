@@ -4,25 +4,29 @@
         {
             name: 'Dawn FM',
             tag: 'Dawn FM',
-            price: 32,
+            artist: 'The Weeknd',
+            price: 32.99,
             inBag: 0
         },
         {
             name: 'Un Verano Sin Ti',
             tag: 'UVST',
-            price: 29,
+            artist: 'Bad bunny',
+            price: 29.99,
             inBag: 0
         }, 
         {
             name: 'Harrys House',
             tag: 'HarrysHouse',
-            price: 32,
+            artist: 'Harry Styles',
+            price: 32.99,
             inBag: 0
         }, 
         {
             name: 'Ivory',
             tag: 'ivory',
-            price: 22,
+            artist: 'Omar Apollo',
+            price: 22.99,
             inBag: 0
         }
     ];
@@ -103,18 +107,42 @@
         bagItems = JSON.parse(bagItems);
         let productConatiner = document.querySelector
         (".products"); /* original was .products-container*/
-       
+        let bagCost = localStorage.getItem('totalCost');
+
         if(bagItems && productConatiner){
             productConatiner.innerHTML = '';
             Object.values(bagItems).map(item => {
                 productConatiner.innerHTML += `
                 <div class= "product">
-                    <ion-icon name="close-circle-outline"></ion-icon>
-                    <img src = "./images/${item.tag}.jpeg">
-                    <span>${item.name}</span>
+                    <ion-icon name="close-circle-outline" ></ion-icon>
+                    <img src = "./images/${item.tag}.jpeg" alt=""
+                    class="product-img"
+                    width="200"
+                    height="200">
+                    <div class="item-name"><span>${item.name}</span></div>
+                    <div class="artistbag"> 
+                    Artist: ${item.artist}
                     </div>
-                    `
+                    </div>
+                    <div class="price">Price: $${item.price} &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    
+                    <ion-icon name="caret-down-outline"></ion-icon> Quantity: ${item.inBag} <ion-icon name="caret-up-outline"></ion-icon> &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp Total: $${item.inBag * item.price.toFixed(2)}</div>
+                   <!-- <div class="quantity">
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                        <<span>Quantity: ${item.inBag}</span>
+                        <ion-icon name="caret-up-outline"></ion-icon>
+                    </div> -->
+                    `;
             });
+
+            productConatiner.innerHTML += `
+            <div class="basketTotalContainer">
+                <h4 class="basketTotalTitle">
+                    Basket Total: &nbsp
+                </h4>
+                <h4 class="basketTotal">
+                     $${bagCost}
+                    </h4>
+            `
         }
     }
 
