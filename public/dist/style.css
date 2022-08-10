@@ -779,22 +779,8 @@ html {
   }
 
 
-  .add-bag{
-    background: black;
-    color: white;
-    font-family: 'Inter';
-    font-weight: 700;
-    width: 100px;
-    height: 30px;
-    border-radius: 30px;
-    border: none;
-    top: 0;
-    right: 0;
-    margin-top: 3%;
-    transform: scale(0.9);
-   }
 
- /*
+ 
   .product-box button{
     background: black;
     color: white;
@@ -809,24 +795,49 @@ html {
     margin-top: 3%;
     transform: scale(0.9);
   }
- */
-
-
-
-
-
-
-  .product-box button:hover{
+ 
+.product-box button:hover{
     background-color: #6E78FF;
   }
  
  
-  .product-box:hover{
+.product-box:hover{
     transform:scale(1.3); 
  
   }
- 
- 
+
+
+.add-bag {
+  background: black;
+  color: white;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 12px;
+  width: 80px;
+  height: 20px;
+  border-radius: 30px;
+  border: none;
+  top: 0;
+  right: 0;
+  left:10%;
+  margin-top: -6%;
+  display: block;
+  margin-left: 40px;
+    
+    
+ }
+
+
+ .add-bag:hover{
+  background-color: #6E78FF;
+}
+
+
+.add-bag:hover{
+  transform:scale(1.3); 
+
+}
+
  
   /*filter*/
  
@@ -923,7 +934,7 @@ html {
     position: absolute;
     width: 579px;
     height: 48px;
-    right: 200px;
+    left: 1050px;
     top: 200px;
  
  
@@ -992,15 +1003,15 @@ html {
   .genresOption ul{
     flex: 2;
     margin-top: 120px;
-    margin-left: 650px;
+    margin-left: 1010px;
     justify-content: space-evenly;
- 
   }
  
   .genresOption ul li{
     list-style: none;
     position:relative;
     display:flex;
+ 
  
   }
   .genresOption ul li a{
@@ -1104,10 +1115,11 @@ html {
   border-bottom: 4px solid lightgray;
   }
 
+  /*
   .product-title{
     width: 45%;
   }
-
+*/
   .price{
     width: 15%;
     display: flex;
@@ -1150,9 +1162,26 @@ html {
   row-gap: 50px;
 }
 
+.container h3{
+  font-family:'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.container h4{
+  font-family:'Inter';
+  font-style: normal;
+  font-weight: 300;
+}
+
+.image:hover{
+  transform:scale(1.3); 
+
+}
+
+
 .add-cart{
   color: darkgray;
-  font-family: 'Inter';
   font-weight: 700;
   width: 100px;
   height: 30px;
@@ -1164,11 +1193,55 @@ html {
   transform: scale(0.9);
 }
 
+.new-releases h1{
+  position: absolute;
+  width: 579px;
+  height: 48px;
+  left: 600px;
+  top: 130px;
+ 
+ 
+    font-family: 'Abril Fatface', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+ 
+    color: #000000;
+}
+
+.new-releases h2{
+  position: absolute;
+  width: 912px;
+  height: 68px;
+  left: 570px;
+  top: 170px;
+ 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+ 
+  color: #000000;
+}
+
+
 .future-releases h1{
   position: absolute;
     width: 579px;
     height: 48px;
-    left: 640px;
+    left: 550px;
     top: 630px;
  
  
@@ -1190,7 +1263,7 @@ html {
   position: absolute;
   width: 912px;
   height: 68px;
-  left: 640px;
+  left: 550px;
   top: 680px;
  
   font-family: 'Inter';
@@ -1229,12 +1302,25 @@ transition: 1s;
 row-gap: 50px;
 }
 
+.new_container h3{
+  font-family:'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.new_container h4{
+  font-family:'Inter';
+  font-style: normal;
+  font-weight: 300;
+}
+
+
 .bestsellers h1{
   position: absolute;
     width: 579px;
     height: 48px;
-    left: 640px;
-    top: 1150px;
+    left: 580px;
+    top: 1110px;
  
  
     font-family: 'Abril Fatface', cursive;
@@ -1255,8 +1341,8 @@ row-gap: 50px;
   position: absolute;
   width: 912px;
   height: 68px;
-  left: 540px;
-  top: 1200px;
+  left: 450px;
+  top: 1150px;
  
   font-family: 'Inter';
   font-style: normal;
@@ -1277,7 +1363,7 @@ row-gap: 50px;
   width: 950px;
   height: 0px;
   left: 235px;
-  top: 1210px;
+  top: 1150px;
 
   border: 1px solid #000000;
 }
@@ -1292,4 +1378,16 @@ margin-right: 50px;
 background: #fff;
 transition: 1s;
 row-gap: 50px;
+}
+
+.third_container h3{
+  font-family:'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.third_container h4{
+  font-family:'Inter';
+  font-style: normal;
+  font-weight: 300;
 }
