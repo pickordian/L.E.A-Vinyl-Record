@@ -1100,12 +1100,13 @@ html {
   }
 
   .products-container ion-icon {
-      font-size: 25px;
-      color: blue;
-      margin-left: 10px;
-      cursor: pointer;
-  }
-
+    font-size: 40px;
+    color: red;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
 
   .product-header{
   width: 100%;
@@ -1115,33 +1116,39 @@ html {
   border-bottom: 4px solid lightgray;
   }
 
-  /*
-  .product-title{
-    width: 45%;
+  .price ion-icon{
+    font-size: 15px ;
   }
-*/
-  .price{
+
+  /*.product-title{
+    width: 45%;
+    font-size: 20px;
+  }*/
+
+  /*.price{
     width: 15%;
     display: flex;
-    align-items: center;
+    margin-left: 300px;
   }
 
   .quantity{
     width: 30%;
-  }
 
+  }
+*/
   .total{
     width: 10%;
   }
 
-  .product{
+ .product{
     display: flex;
     justify-items: space-around;
-    align-items: center;
+    /*align-items: center;*/
     padding: 10px 0;
-    border-bottom: 3px solid lightgray;
-  }
+   border-bottom: 4px solid lightgray;
+   border-top: 80px solid white;
 
+  }
   /* end of cart page */
 
 
@@ -1391,3 +1398,21 @@ row-gap: 50px;
   font-style: normal;
   font-weight: 300;
 }
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .artistbag{
+    margin-top: 0px;
+    margin-left: 90px;
+    margin-top: 90px;
+  
+  }
+  
+  .item-name{
+    font-weight: 800;
+    margin-left: 10px;
+    margin-top: 90px;
+  }
